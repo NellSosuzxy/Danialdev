@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of an IT student transitioning into Cybersecurity. Leveling up in networking, infrastructure, and security.">
+    
+    <!-- Open Graph SEO -->
+    <meta property="og:title" content="Danial | Cybersecurity Learner & IT Student">
+    <meta property="og:description" content="Bridging systems administration and network defense.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://danial.dev/og-preview.jpg">
+    <meta property="og:url" content="https://danial.dev">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+    
+    <title>Portfolio | SYS_ADMIN // Cybersecurity Learner</title>
+    
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
+</head>
+
+<body class="is-loading">
+
+    <div id="preloader" aria-label="Initializing system" role="alert" aria-busy="true">
+        <div class="loader-terminal">
+            SYS_ENV // INITIALIZING<span class="blinking-cursor">_</span>
+        </div>
+        <div class="loader-bar" aria-hidden="true"></div>
+    </div>
+
+    <!-- ENGR NOTE: Replaced glowing spotlight with precision circle cursor -->
+    <div id="custom-cursor" aria-hidden="true"></div>
+
+    <header>
+        <nav id="navbar" aria-label="Main Navigation">
+            <a href="#about" class="nav-link">SYS_SPECS</a>
+            <a href="#skills" class="nav-link">ARSENAL</a>
+            <a href="#projects" class="nav-link">MISSIONS</a>
+            <a href="#journey" class="nav-link">LEVEL_UP</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero" id="home">
+            <div class="fade-up visible">
+                <div class="hero-badge">INSERT COIN // STAGE_01</div>
+                <h1><span id="typewriter-text"></span><span class="blinking-cursor">_</span></h1>
+                <p class="terminal-text text-lg text-accent-green">IT Student -> Cybersecurity Transition</p>
+                <p>Bridging the gap between systems administration and network defense. Building infrastructure and learning how to protect it.</p>
+                
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary"><i data-lucide="crosshair" class="icon-sm"></i> MISSIONS</a>
+                    <a href="#about" class="btn btn-outline"><i data-lucide="user" class="icon-sm"></i> PLAYER_STATS</a>
+                    <a href="./resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-outline-pink"><i data-lucide="download" class="icon-sm icon-pink"></i> RESUME</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="fade-up">
+            <h2 class="section-title"><span>></span>PLAYER_SYS_SPECS</h2>
+            <div class="text-block">
+                <h3 class="log-entry-title">[LOG_ENTRY: ORIGIN]</h3>
+                <p>My tech journey began with a curiosity about how operating systems and networks function under the hood. Currently in my final year of a Diploma in IT, I have built a solid foundation in programming, networking, and system administration.</p>
+                <br>
+                <h3 class="log-entry-title">[LOG_ENTRY: CURRENT_OBJ]</h3>
+                <p>As I wrap up my diploma, my main quest is directed squarely at cybersecurity. I believe the best way to understand security is to thoroughly understand the infrastructure it protects. Outside coursework, I deploy virtual machines to practice Linux internals, analyze packets, and study network defense fundamentals.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="fade-up">
+            <h2 class="section-title"><span>></span>INVENTORY_ARSENAL</h2>
+            <div class="grid">
+                <article class="card">
+                    <div class="card-header"><i data-lucide="terminal-square" class="icon-cyan"></i><h3>SCRIPTING & CLI</h3></div>
+                    <p class="text-muted">Writing basic automation scripts and navigating operating systems via command line.</p>
+                    <div class="tag-container"><span class="tag">Python</span><span class="tag">Bash</span><span class="tag">CMD</span></div>
+                </article>
+                <article class="card">
+                    <div class="card-header"><i data-lucide="router" class="icon-pink"></i><h3>NETWORKING</h3></div>
+                    <p class="text-muted">Understanding data flow, protocols, routing configuration, and architectural models.</p>
+                    <div class="tag-container"><span class="tag">TCP/IP</span><span class="tag">OSI</span><span class="tag">Subnetting</span></div>
+                </article>
+                <article class="card">
+                    <div class="card-header"><i data-lucide="server" class="icon-yellow"></i><h3>INFRA & VM LABS</h3></div>
+                    <p class="text-muted">Deploying virtual sandboxes to safely observe network behavior and practice Linux internals.</p>
+                    <div class="tag-container"><span class="tag">VirtualBox</span><span class="tag">Wireshark</span><span class="tag">Linux</span></div>
+                </article>
+                <article class="card">
+                    <div class="card-header"><i data-lucide="cpu" class="icon-green"></i><h3>HARDWARE TINKERING</h3></div>
+                    <p class="text-muted">Exploring microcontroller capabilities with ESP32 devices and basic security-oriented firmware configuration within sandbox environments.</p>
+                    <div class="tag-container"><span class="tag">ESP32</span><span class="tag">Firmware Explorations</span></div>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="fade-up">
+            <h2 class="section-title"><span>></span>ACTIVE_MISSIONS</h2>
+            <div class="grid">
+                <article class="card card-cyan">
+                    <h3 class="mission-title">[LVL 01] Automated Infrastructure Lab</h3>
+                    <p class="terminal-text mission-status-cyan">STATUS: COMPLETED</p>
+                    <p class="text-muted">Architected an isolated virtual environment with distinct subnets to execute and validate firewall rules and network defense strategies safely.</p>
+                    <div class="tag-container"><span class="tag">Sandbox Exploration</span><span class="tag">VirtualBox</span><span class="tag">pfSense</span></div>
+                </article>
+                <article class="card card-pink">
+                    <h3 class="mission-title">[LVL 02] Network Packet Analyzer</h3>
+                    <p class="terminal-text mission-status-pink">STATUS: COMPLETED</p>
+                    <p class="text-muted">Captured and analyzed logical network traffic, successfully dissecting handshake protocols and basic Nmap scanning structures.</p>
+                    <div class="tag-container"><span class="tag">Self-Guided Exercise</span><span class="tag">Wireshark</span><span class="tag">Nmap</span></div>
+                </article>
+                <article class="card card-yellow">
+                    <h3 class="mission-title">[LVL 03] Host Log Aggregator Engine</h3>
+                    <p class="terminal-text mission-status-yellow">STATUS: IN_PROGRESS</p>
+                    <p class="text-muted">Automated the extraction, parsing, and backup of critical Linux authentication logs using Python OS libraries.</p>
+                    <div class="tag-container"><span class="tag">Sandbox Exploration</span><span class="tag">Python</span><span class="tag">Syslogs</span></div>
+                </article>
+                <article class="card card-green">
+                    <h3 class="mission-title">[LVL 04] PHP IT Asset Inventory</h3>
+                    <p class="terminal-text mission-status-green">STATUS: ACADEMIC_PROJECT</p>
+                    <p class="text-muted">
+                        <strong>Overview:</strong> Full-stack web application facilitating secure CRUD capabilities.<br>
+                        <strong>Learned:</strong> Engineered backend business logic, structured relational schemas, and executed secure form input processing.
+                    </p>
+                    <div class="tag-container"><span class="tag">PHP</span><span class="tag">Laravel</span><span class="tag">MySQL</span></div>
+                </article>
+            </div>
+        </section>
+
+        <section id="journey" class="fade-up">
+            <h2 class="section-title"><span>></span>PLAYER_LEVEL_UP</h2>
+            <div class="timeline">
+                <article class="timeline-item">
+                    <time class="timeline-date">STAGE_06: FUTURE EXPANSION</time>
+                    <h3 class="timeline-title">Bachelor in Cybersecurity</h3>
+                    <p class="text-muted">Targeted progression into vulnerability management, penetration testing, and advanced defensive architecture.</p>
+                </article>
+                <article class="timeline-item">
+                    <time class="timeline-date">STAGE_05: CURRENT (2025 - 2026)</time>
+                    <h3 class="timeline-title">Cybersecurity Exploration Phase</h3>
+                    <p class="text-muted">Self-study of network defense, Wireshark lab practices, and investigating the security implications of system architecture.</p>
+                </article>
+                <article class="timeline-item">
+                    <time class="timeline-date">STAGE_04: DIPLOMA TIMELINE</time>
+                    <h3 class="timeline-title">Linux Internals & VM Labs</h3>
+                    <p class="text-muted">Deploying isolated environments, learning bash scripting, operating system functionality, and basic security configuration.</p>
+                </article>
+                <article class="timeline-item">
+                    <time class="timeline-date">STAGE_03: DIPLOMA TIMELINE</time>
+                    <h3 class="timeline-title">Programming Basics</h3>
+                    <p class="text-muted">Constructing logic through Python, and deploying relational databases with basic PHP web integration.</p>
+                </article>
+                <article class="timeline-item">
+                    <time class="timeline-date">STAGE_02: DIPLOMA TIMELINE</time>
+                    <h3 class="timeline-title">Networking Fundamentals</h3>
+                    <p class="text-muted">Learning TCP/IP models, routing protocols, subnetting, and enterprise architectural basics.</p>
+                </article>
+                <article class="timeline-item">
+                    <time class="timeline-date">STAGE_01: INCEPTION (2024)</time>
+                    <h3 class="timeline-title">Diploma in Information Technology</h3>
+                    <p class="text-muted">MARA Poly-Tech College. Exploring initial exposure to computer systems and foundation IT administration.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="fade-up">
+        <h2 class="footer-title">CONTINUE?_</h2>
+        
+        <ul class="pixel-socials" aria-label="Social media links">
+            <li>
+                <a href="https://github.com/NellSosuzxy" target="_blank" rel="noopener noreferrer" class="pixel-social github" aria-label="GitHub">
+                    <img src="./images/github.svg" alt="GitHub icon" aria-hidden="true" />
+                </a>
+            </li>
+            <li>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="pixel-social linkedin" aria-label="LinkedIn">
+                    <img src="./images/linkedin.svg" alt="LinkedIn icon" aria-hidden="true" />
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/dababytickler999/" target="_blank" rel="noopener noreferrer" class="pixel-social instagram" aria-label="Instagram">
+                    <img src="./images/instagram.svg" alt="Instagram icon" aria-hidden="true" />
+                </a>
+            </li>
+            <li>
+                <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="pixel-social tiktok" aria-label="TikTok">
+                    <img src="./images/tiktok.svg" alt="TikTok icon" aria-hidden="true" />
+                </a>
+            </li>
+        </ul>
+
+        <p class="terminal-text text-secondary-color">GAME OVER // DESIGNED BY DANIAL // 2026</p>
+    </footer>
+</body>
+</html>
