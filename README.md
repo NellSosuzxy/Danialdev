@@ -5,7 +5,7 @@ Cybersecurity-focused IT student exploring system fundamentals, web development,
 ---
 
 ##  Current Focus
-- Linux fundamentals 🐧
+- Linux fundamentals 
 - Bash scripting automation
 - Python for security & scripting
 - Networking basics (TCP/IP, HTTP)
@@ -25,14 +25,6 @@ Cybersecurity-focused IT student exploring system fundamentals, web development,
 ![Git](https://img.shields.io/badge/Git-red?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-grey?style=for-the-badge&logo=github&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-yellow?style=for-the-badge&logo=linux&logoColor=black)
-
----
-
-## 📊 GitHub Stats
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=radical)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=radical)
 
 ---
 
