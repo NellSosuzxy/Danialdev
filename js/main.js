@@ -134,3 +134,37 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.15 });
 
 document.querySelectorAll('.fade-up, .card, .timeline-item').forEach(el => observer.observe(el));
+
+// -------------------------------------------------------------
+// ENGR NOTE: Button Cipher Glitch Effect
+// -------------------------------------------------------------
+document.addEventListener('DOMContentLoaded', () => {
+    const chars = '#X9@!_V3R$%^&*()[]{}|;:,.<>?';
+    document.querySelectorAll('.cipher-btn').forEach(btn => {
+        const textSpan = btn.querySelector('.btn-text');
+        if (!textSpan) return;
+        const originalText = btn.dataset.text;
+        let timeout;
+        let interval;
+        
+        btn.addEventListener('mouseenter', () => {
+            clearInterval(interval);
+            clearTimeout(timeout);
+            
+            interval = setInterval(() => {
+                textSpan.innerText = Array.from(originalText).map(() => chars[Math.floor(Math.random() * chars.length)]).join('');
+            }, 50);
+            
+            timeout = setTimeout(() => {
+                clearInterval(interval);
+                textSpan.innerText = originalText;
+            }, 300); // Exposes original text after 300ms
+        });
+        
+        btn.addEventListener('mouseleave', () => {
+            clearInterval(interval);
+            clearTimeout(timeout);
+            textSpan.innerText = originalText;
+        });
+    });
+});

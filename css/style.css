@@ -223,3 +223,16 @@ body.is-loading { overflow: hidden; }
 .mission-status-yellow { color: var(--accent-yellow); margin-bottom: 1rem; }
 .mission-status-green { color: var(--accent-green); margin-bottom: 1rem; }
 .footer-title { font-family: var(--font-pixel); font-size: 1rem; margin-bottom: 1.5rem; }
+
+@media (max-width: 768px) {
+    .hero-actions { 
+        flex-direction: column; 
+        width: 100%; 
+    }
+    .hero-actions .btn {
+        width: 100%;
+    }
+    .timeline { 
+        padding-left: 1rem; 
+    }
+}
