@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.cipher-btn').forEach(btn => {
         const textSpan = btn.querySelector('.btn-text');
         if (!textSpan) return;
-        const originalText = btn.dataset.text;
+        const originalText = btn.dataset.text || textSpan.innerText || "VIEW_REPO";
         let timeout;
         let interval;
         
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
             timeout = setTimeout(() => {
                 clearInterval(interval);
                 textSpan.innerText = originalText;
-            }, 300); // Exposes original text after 300ms
+            }, 600); // Diperpanjang ke 600ms agar efek hacker lebih terlihat
         });
         
         btn.addEventListener('mouseleave', () => {
