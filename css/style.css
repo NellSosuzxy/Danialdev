@@ -206,7 +206,7 @@ body.is-loading { overflow: hidden; }
 .text-lg { font-size: 1.4rem; }
 .text-secondary-color { color: var(--text-secondary); }
 .text-accent-green { color: var(--accent-green); }
-.btn-outline-pink { border-color: var(--accent-pink); color: var(--text-primary); }
+.btn-outline-pink { border-color: var(--accent-pink); color: var(--accent-pink); box-shadow: 4px 4px 0px rgba(237, 0, 140, 0.2); }
 .icon-sm { width: 18px; }
 .icon-pink { color: var(--accent-pink); }
 .icon-cyan { color: var(--accent-cyan); }
