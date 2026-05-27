@@ -12,26 +12,37 @@
         },
 
         bindEvents() {
-            window.addEventListener("load", this.handlePreloader.bind(this));
+            // Menggunakan DOMContentLoaded supaya tak tunggu gambar/font rendering yang lambat
             document.addEventListener("DOMContentLoaded", () => {
+                this.handlePreloader();
                 if (typeof lucide !== "undefined") lucide.createIcons();
             });
+
+            // Failsafe jika DOM sudah sedia (cth: load dari cache)
+            if (document.readyState === "interactive" || document.readyState === "complete") {
+                this.handlePreloader();
+            }
         },
 
         handlePreloader() {
+            if (this.preloaderFired) return;
+            this.preloaderFired = true;
+
             const preloader = document.getElementById("preloader");
+            
+            // Masa menunggu diringkaskan dari 150ms -> 50ms, dan 600ms -> 300ms
             setTimeout(() => {
                 if (preloader) {
                     preloader.classList.add("hidden");
                     setTimeout(() => {
                         preloader.style.display = "none";
                         this.typewriterEffect();
-                    }, 600);
+                    }, 300);
                 } else {
                     this.typewriterEffect();
                 }
                 document.body.classList.remove("is-loading");
-            }, 150);
+            }, 50);
         },
 
         typewriterEffect() {
