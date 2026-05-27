@@ -35,10 +35,6 @@ body {
     background-attachment: fixed;
     position: relative;
 }
-
-/* 
- * ENGR NOTE: Custom Circle Cursor
- */
 #custom-cursor {
     position: fixed; top: 0; left: 0; 
     width: 30px; height: 30px;
@@ -49,8 +45,6 @@ body {
     will-change: transform;
     box-shadow: 0 0 10px rgba(0, 243, 255, 0.3), inset 0 0 8px rgba(0, 243, 255, 0.2);
 }
-
-/* Interactive scale state */
 #custom-cursor.hovering {
     width: 50px; height: 50px;
     margin-top: -25px; margin-left: -25px;
@@ -163,8 +157,6 @@ section { padding: clamp(3rem, 10vw, 7rem) 0; display: flex; flex-direction: col
 
 .fade-up { opacity: 0; transform: translateY(15px); transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
 .fade-up.visible { opacity: 1; transform: translateY(0); }
-
-/* Social Icons - Cyber Pixel Art System */
 .pixel-socials { display: flex; gap: 1.5rem; justify-content: center; margin-bottom: 2.5rem; }
 .pixel-social {
     display: flex; align-items: center; justify-content: center;
@@ -188,8 +180,6 @@ section { padding: clamp(3rem, 10vw, 7rem) 0; display: flex; flex-direction: col
 .pixel-social.tiktok:hover { background: var(--accent-green); border-color: var(--accent-green); box-shadow: 0 0 15px rgba(0, 255, 65, 0.5); }
 
 footer { border-top: 1px dashed var(--border); padding: 4rem 0; margin-top: 4rem; text-align: center; position: relative; z-index: 2; }
-
-/* PRELOADER SYSTEM */
 body.is-loading { overflow: hidden; } 
 #preloader {
     position: fixed; top: 0; left: 0; width: 100%; height: 100vh;
@@ -206,10 +196,6 @@ body.is-loading { overflow: hidden; }
 }
 @keyframes indetBar { 0% { left: -40%; } 100% { left: 100%; } }
 @media (prefers-reduced-motion: reduce) { .loader-bar::after { animation: none; width: 100%; } #preloader { transition: opacity 0.1s; } }
-
-/* ==========================================================================
-   UTILITY CLASSES (Extracted from Inline Styles)
-   ========================================================================== */
 .text-lg { font-size: 1.4rem; }
 .text-secondary-color { color: var(--text-secondary); }
 .text-accent-green { color: var(--accent-green); }
@@ -242,115 +228,52 @@ body.is-loading { overflow: hidden; }
         padding-left: 1rem; 
     }
 }
-
-/* Certificate Cards (Advanced Portfolio Level) */
-.cert-card {
-    padding: 2.5rem;
-}
-
-.cert-content {
-    display: flex;
-    flex-direction: row;
-    gap: 2.5rem;
-    align-items: center;
+.clearance-board {
     width: 100%;
+    max-width: 900px;
+    padding: 2rem;
+    margin: 0 auto;
 }
 
-.cert-badge-container {
-    flex: 0 0 120px;
-    height: 120px;
+.clearance-item {
+    border-bottom: 1px dashed var(--border);
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.clearance-item-last {
+    padding-bottom: 0.5rem;
+}
+
+.clearance-meta {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.4);
-    border: 1px dashed var(--border);
-    border-radius: var(--radius-lg);
-    padding: 1rem;
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
-    transition: all 0.3s ease;
-}
-
-.cert-card:hover .cert-badge-container {
-    border-color: var(--accent-cyan);
-    box-shadow: 0 0 15px rgba(0, 243, 255, 0.1), inset 0 0 10px rgba(0,0,0,0.5);
-}
-
-.cert-badge {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    filter: drop-shadow(0 0 5px rgba(255,255,255,0.1));
-}
-
-.cert-details {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 1rem;
-}
-
-.cert-title {
-    font-family: var(--font-terminal);
-    font-size: 1.5rem;
-    color: var(--accent-cyan);
-    margin: 0;
-    line-height: 1.3;
-}
-
-.cert-skills {
-    background: rgba(0, 243, 255, 0.05);
-    border-left: 3px solid var(--accent-cyan);
-    padding: 1rem 1.25rem;
-    margin: 0.5rem 0;
-    border-radius: 0 var(--radius-md) var(--radius-md) 0;
-}
-
-.cert-skills strong {
-    font-family: var(--font-pixel);
-    font-size: 0.7rem;
-    color: var(--text-primary);
-    text-transform: uppercase;
-    display: block;
+    align-items: baseline;
     margin-bottom: 0.5rem;
 }
 
-.cert-skills ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 0.5rem;
+.clearance-heading {
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
 }
 
-.cert-skills li {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
+.clearance-heading-pending {
+    margin-bottom: 0.5rem;
+    color: var(--accent-yellow);
 }
 
-.cert-skills li::before {
-    content: '>';
-    color: var(--accent-pink);
+.clearance-issuer {
     font-family: var(--font-terminal);
     font-size: 1.1rem;
+    margin-bottom: 1rem;
 }
 
-.verify-btn {
-    align-self: flex-start;
-    margin-top: 1rem;
-}
-
-@media (max-width: 768px) {
-    .cert-content {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1.5rem;
-    }
-    
-    .cert-badge-container {
-        align-self: flex-start;
-    }
+.btn-pending {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+    opacity: 0.4;
+    cursor: not-allowed;
+    border-color: var(--accent-yellow);
+    color: var(--accent-yellow);
 }
