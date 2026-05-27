@@ -46,7 +46,7 @@
         },
 
         typewriterEffect() {
-            const text = "SYS_ADMIN
+            const text = "SYS_ADMIN // READY";
             const typeEl = document.getElementById("typewriter-text");
             if (!typeEl) return;
 
