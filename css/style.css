@@ -227,12 +227,44 @@ body.is-loading { overflow: hidden; }
     .timeline { 
         padding-left: 1rem; 
     }
+    .container {
+        padding: 0 1rem;
+    }
+    .text-block, 
+    .clearance-board,
+    .card {
+        padding: 1.25rem;
+    }
+    .btn {
+        font-size: 0.65rem;
+        padding: 0.75rem 1rem;
+        text-align: center;
+        justify-content: center;
+        word-wrap: break-word;
+        white-space: normal;
+    }
+    .clearance-item .btn,
+    .clearance-item-last .btn {
+        width: 100%;
+    }
+    .clearance-meta {
+        gap: 0.5rem;
+    }
+    .section-title {
+        font-size: 1rem;
+    }
 }
 .clearance-board {
     width: 100%;
     max-width: 900px;
     padding: 2rem;
     margin: 0 auto;
+}
+
+.clearance-item,
+.clearance-item-last {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .clearance-item {
