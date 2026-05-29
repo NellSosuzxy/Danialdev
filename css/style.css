@@ -225,7 +225,21 @@ body.is-loading { overflow: hidden; }
         width: 100%;
     }
     .timeline { 
-        padding-left: 1rem; 
+        padding-left: 1.2rem; 
+    }
+    .timeline-item::before {
+        left: -1.8rem;
+        width: 12px;
+        height: 12px;
+    }
+    .timeline-date {
+        font-size: 1rem;
+    }
+    .timeline-title {
+        font-size: 0.65rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        line-height: 1.5;
     }
     .container {
         padding: 0 1rem;
